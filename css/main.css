@@ -1,0 +1,34 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  background-color: #f1f1f1; /* Background color of the tab container */
+}
+
+.tabs li {
+  padding: 10px 20px; /* Adjusts padding inside each tab */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+  border-bottom: 2px solid transparent; /* Bottom border with transparent color for spacing */
+}
+
+.tabs li:hover {
+  background-color: #ddd; /* Background color on hover */
+}
+
+.tabs .active {
+  background-color: #007bff; /* Background color for the active tab */
+  color: #ffffff; /* Text color for the active tab */
+  border-bottom: 2px solid #007bff; /* Border color for the active tab */
+}
+
+#homeContent {
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+
+  margin: 0 5em;
+}
